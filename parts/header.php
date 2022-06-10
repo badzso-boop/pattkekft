@@ -16,7 +16,7 @@
     <div>
         <ul>
             <li><a href="index.php">Főoldal</a></li> 
-            <li><a href='parts/logout.php'>Kilépés</a></li>           
+            <li><a href='admin.php'>Admin felület</a></li>           
             <?php
             if (isset($_SESSION["useruid"])) {
                 echo "<li>".$_SESSION["useruid"]."</li>";
