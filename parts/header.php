@@ -16,7 +16,11 @@
     <div>
         <ul>
             <li><a href="index.php">Főoldal</a></li> 
-            <li><a href='admin.php'>Admin felület</a></li>           
+            <li><a href='admin.php'>Admin felület</a></li>      
+            <li><a href='referenciak.php'>Referenciák</a></li>
+            <li><a href='karrier.php'>Karrier</a></li>
+            <li><a href='rolunk.php'>Rólunk</a></li>
+            <li><a href='elerhetosegek.php'>Elérhetőségek</a></li>
             <?php
             if (isset($_SESSION["useruid"])) {
                 echo "<li>".$_SESSION["useruid"]."</li>";

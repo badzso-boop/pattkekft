@@ -1,0 +1,41 @@
+Ez a cég
+http://www.pattkekft.hu/index.php/hu/rolunk/bemutatkozas
+
+https://vattayconstructions.hu/csaladi-haz-epites/?gclid=CjwKCAjw4ayUBhA4EiwATWyBrkuLqQaJSrGGDiHOfiJyDZFE84SnJ9tzz-EB6wnHL0F5sR39xpld_xoCFxAQAvD_BwE
+
+Koncepcio
+https://hungarianproject.hu/
+ - letisztult, egyszerű, modern
+ - szín: barnáés vagy kékes0
+ - burkolatok + referenciák
+ - menu: refernciak, csaladi hazak, elerhetoseg/kapcsolat, karrier, fooldal
+ - ászf + nem jut eszembe
+ - bemutatkozás
+ - cookie
+ - generalkivitelezes... -> hidegburkolat, referencia, melegburkolat
+ - sáv + képek
+ - számok amelyek helyettünk beszélnek
+ - álláslehetőségek -> karrier
+
+karrier
+ - ahol tudnak jelentkezni az uj alkalmazottak
+
+tevékenység/referenciák
+ - ezt ők töltik fel
+
+céginformációk
+ - megadják az adatokat
+
+főoldal
+ - bemutatkozás
+
+elérhetőségek
+ - facebook
+
+szakképzett csapat stb...
+adatok - avagy parasztvakítás
+
+Üzenetküldés - a munkákhoz
+SEO - wp vagy php
+
+Kell admin felület
