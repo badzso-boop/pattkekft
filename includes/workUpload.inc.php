@@ -12,7 +12,7 @@ if (isset($_POST["submit"]))
     //Üres mezők ellenőrzése
     if (emptyInputWorkUpload($nev, $feladat, $fizu, $kontakt) !== false)
     {
-        header("location: ../admin.php?error=emptyinput");
+        header("location: ../admin.php?error=wemptyinput");
         exit();
     }
 

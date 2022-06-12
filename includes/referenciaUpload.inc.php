@@ -31,7 +31,7 @@ if (isset($_POST["submit"]))
                     //Üres mezők ellenőrzése
                     if (emptyInpuReferenciakUpload($megnevezes, $leiras, $fajlnevuj) !== false)
                     {
-                        header("location: ../admin.php?error=emptyinput");
+                        header("location: ../admin.php?error=remptyinput");
                         exit();
                     }
 
@@ -44,15 +44,15 @@ if (isset($_POST["submit"]))
                 exit();
                 }
             } else {
-                header("location: ../admin.php?error=bigfile");
+                header("location: ../admin.php?error=rbigfile");
                 exit();
             }
         } else {
-            header("location: ../admin.php?error=wrongfile");
+            header("location: ../admin.php?error=rwrongfile");
             exit();
         }
     } else {
-        header("location: ../admin.php?error=wrongfileext");
+        header("location: ../admin.php?error=rwrongfileext");
         exit();
     }
 }

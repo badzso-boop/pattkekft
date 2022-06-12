@@ -99,6 +99,14 @@
             <input type="text" name="kontakt" placeholder="Elérhetőség">
             <button type="submit" name="submit">Feltöltés</button>
         </form>
+        <?php
+            // Hiba üzenetek
+            if (isset($_GET["error"])) {
+                if ($_GET["error"] == "wemptyinput") {
+                    echo "<p>Kérem töltse ki az összes mezőt!</p>";
+                }
+            }
+        ?> 
         <table>
             <tr>
                 <td>Id</td>
@@ -163,6 +171,23 @@
             <input type="file" name="myFile" />
             <button type="submit" name="submit">Feltöltés</button>
         </form>
+        <?php
+            // Hiba üzenetek
+            if (isset($_GET["error"])) {
+                if ($_GET["error"] == "remptyinput") {
+                    echo "<p>Kérem töltse ki az összes mezőt!</p>";
+                }
+                else if ($_GET["error"] == "rbigfile") {
+                    echo "<p>Túl nagy képet töltött fel!</p>";
+                }
+                else if ($_GET["error"] == "rwrongfile") {
+                    echo "<p>Hibás fájl!</p>";
+                }
+                else if ($_GET["error"] == "rwrongfileext") {
+                    echo "<p>Rossz a fájl kiterjesztése! Támogatott kiterjesztések: jpg, jpeg, png!</p>";
+                }
+            }
+        ?>
         <table>
             <tr>
                 <td>Id</td>
