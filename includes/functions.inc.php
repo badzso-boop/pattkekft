@@ -227,7 +227,7 @@ function deleteSpecificUser($conn, $id) {
 }
 #endregion
 
-/*--------Munkak------------*/
+/*--------Karrier------------*/
 #region
 
 function emptyInputWorkUpload($nev, $feladat, $fizu, $kontakt) {
@@ -302,7 +302,6 @@ function deleteSpecificWork($conn, $id) {
 }
 
 #endregion
-
 
 /*--------Uzenetek----------*/
 #region
