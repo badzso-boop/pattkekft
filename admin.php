@@ -269,6 +269,7 @@
                 <td>Cimzett</td>
                 <td>Szoveg</td>
                 <td>Allapot</td>
+                <td>Jelentkezett Munka</td>
                 <td>Létrehozás Dátum</td>
             </tr>
         <?php 
@@ -285,6 +286,7 @@
                         <td>".$row["cimzett"]."</td>
                         <td>".$row["szoveg"]."</td>
                         <td>".$row["allapot"]."</td>
+                        <td>".$row["munka"]."</td>
                         <td>".$row["letrehozas_datum"]."</td>
                         <td><button onclick='messageOpen(".$row['id'].",".json_encode($row['felado']).",".json_encode($row['elerhetoseg']).",".json_encode($row['cimzett']).",".json_encode($row['szoveg']).",".json_encode($row['allapot']).")'>Megnyitás</button></td>
                     </tr>";

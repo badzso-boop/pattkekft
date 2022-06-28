@@ -24,7 +24,7 @@
                         <td>".$row["feladat"]."</td>
                         <td>".$row["fizetes"]."</td>
                         <td>".$row["elerhetoseg"]."</td>
-                        <td><a href='elerhetosegek.php?id=".$row["id"]."'><button>Jelentkezés</button></a></td>
+                        <td><a href='elerhetosegek.php?munka=".$row["megnevezes"]."'><button>Jelentkezés</button></a></td>
                     </tr>";
             }
             } else {

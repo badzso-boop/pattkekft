@@ -11,7 +11,11 @@
             <input type="text" name="cimzett" placeholder="Címzett...">
             <textarea name="szoveg" id="" cols="30" rows="10" placeholder="Szöveg..."></textarea>
             <?php
-                echo '<input type="number" name="munka_id" value="'.$_GET["id"].'" readonly style="display: none;">'
+                if (isset($_GET["munka"])) {
+                    echo '<input type="text" name="feladat" value="'.$_GET["munka"].'" readonly style="display: none;">';
+                } else {
+                    echo '<input type="text" name="feladat" value="-1" readonly style="display: none;">';
+                }
             ?>
             <button type="submit" name="submit">Küldés</button>
         </form>

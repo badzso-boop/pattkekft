@@ -78,7 +78,7 @@ function uidExists($conn, $username) {
 
 // Új felhasználó feltöltése az adatbázisba
 function createUser($conn, $name, $email, $username, $pwd) {
-  $sql = "INSERT INTO felhasznalok (teljes_nev, felhasznalonev, email, jelszo, pozicio) VALUES (?, ?, ?, ?, ?);";
+  	$sql = "INSERT INTO felhasznalok (teljes_nev, felhasznalonev, email, jelszo, pozicio) VALUES (?, ?, ?, ?, ?);";
 
 	$stmt = mysqli_stmt_init($conn);
 	if (!mysqli_stmt_prepare($stmt, $sql)) {
@@ -342,6 +342,34 @@ function deleteSpecificMessage($conn, $id) {
 	mysqli_close($conn);
 	header("location: ../admin.php?error=none");
 	exit();
+}
+
+function uploadMessage($conn, $felado, $elerhetoseg, $cimzett, $szoveg, $allapot, $munka) {
+	$sql = "INSERT INTO uzenetek (felado, elerhetoseg, cimzett, szoveg, allapot, munka) VALUES (?, ?, ?, ?, ?, ?);";
+
+	$stmt = mysqli_stmt_init($conn);
+	if (!mysqli_stmt_prepare($stmt, $sql)) {
+	 	header("location: ../elerhetosegek.php?error=stmtfailed");
+		exit();
+	}
+
+	mysqli_stmt_bind_param($stmt, "ssssss", $felado, $elerhetoseg, $cimzett, $szoveg, $allapot, $munka);
+	mysqli_stmt_execute($stmt);
+	mysqli_stmt_close($stmt);
+	mysqli_close($conn);
+	header("location: ../elerhetosegek.php?error=none");
+	exit();
+}
+
+function emptyInputMessage($felado, $elerhetoseg, $cimzett, $szoveg, $munka) {
+	$result;
+	if (empty($felado) || empty($elerhetoseg) || empty($cimzett) || empty($szoveg) || empty($munka)) {
+		$result = true;
+	}
+	else {
+		$result = false;
+	}
+	return $result;
 }
 
 #endregion

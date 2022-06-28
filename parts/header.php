@@ -63,22 +63,13 @@
     <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav ms-auto" >
             <li class="nav-item" ><a href="index.php" class="nav-link">Főoldal</a></li> 
-			
-            <li class="nav-item"><a href='admin.php'  class="nav-link">Admin felület</a></li>      
+
             <li class="nav-item"><a href='referenciak.php'  class="nav-link">Referenciák</a></li>
             <li class="nav-item"><a href='karrier.php'  class="nav-link">Karrier</a></li>
             <li class="nav-item"><a href='rolunk.php'  class="nav-link">Rólunk</a></li>
             <li class="nav-item"><a href='elerhetosegek.php'  class="nav-link">Elérhetőségek</a></li>
-            <?php
-            if (isset($_SESSION["useruid"])) {
-                echo "<li>".$_SESSION["useruid"]."</li>";
-                echo "<li><a href='parts/logout.php'>Kilépés</a></li>";
-            }
-            else {
-              echo "<li><a href='signup.php'>Regisztráció</a></li>";
-              echo "<li><a href='login.php'>Belépés</a></li>";
-            }
-          ?>
+
+            <li class="nav-item"><a href='admin.php'  class="nav-link">Admin felület</a></li>      
         </ul>
     </div>
 	 </div>
