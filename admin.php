@@ -15,16 +15,34 @@
 ?>
 
 <div class="adminlogin">
+    <h2>Belépés</h2>
+    <form action="includes/admin.inc.php" method="post">
+        <input type="text" name="uid" placeholder="Felhasználónév...">
+        <input type="password" name="pwd" placeholder="Jelszó...">
+        <button type="submit" name="ssubmit">Belépés</button>
+    </form>
 
+    <?php
+        // Hiba üzenetek
+        if (isset($_GET["error"])) {
+            if ($_GET["error"] == "emptyinput") {
+            echo "<p>Kérem töltse ki az összes mezőt!</p>";
+            }
+            else if ($_GET["error"] == "wronglogin") {
+            echo "<p>Hibás adatok!</p>";
+            }
+        }
+    ?>
 </div>
 
-<div class="main">
+<div class="main" style="display: none;">
     <div class="header">
         <ul>
             <li><button onclick="felhasznalok()">Felhasznalok</button></li>
             <li><button onclick="munkak()">Munkak</button></li>
             <li><button onclick="referenciak()">Referenciak</button></li>
             <li><button onclick="uzenetek()">Uzenetek</button></li>
+            <li><a href='parts/logout.php'>Kilépés</a></li>
         </ul>
     </div>
 

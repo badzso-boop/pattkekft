@@ -1,6 +1,27 @@
 <?php
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
+
     require_once 'dbh.inc.php';
     require_once 'functions.inc.php';
+
+    if (isset($_POST["ssubmit"])) {
+        // Lekérjük az adatokat az URL-ből
+        $username = $_POST["uid"];
+        $pwd = $_POST["pwd"];
+        
+        // Üres inputok
+        if (emptyInputLogin($username, $pwd) === true) {
+            header("location: ../admin.php?error=emptyinput");
+                exit();
+        }
+        
+        // Bejelentkeztetjük a felhasználót a weboldalra
+        loginUser($conn, $username, $pwd);    
+    }
+
 
     //Az osszes felhasznalo lekerese
     $users = getAllUser($conn);
@@ -76,8 +97,6 @@
         deleteSpecificWork($conn, $id);
     }
 
-
-
     //adott uzenet torlese
     if (isset($_POST["udsubmit"])) {
         $id = $_POST["uzid"];
@@ -121,11 +140,17 @@
         deleteSpecificReferencia($conn, $id);
     }
 
-
-
     if(isset($_SESSION["pozicio"])) {
-        if($_SERVER["pozicio"] == "admin")
+        if($_SESSION["pozicio"]["pozicio"] == "admin")
         {
+            echo '<style type="text/css">
+                    .main {
+                        display: block !important;
+                    }
+                    .adminlogin {
+                        display: none !important;
+                    }
+                </style>'; 
             //Összes felhasznalo lekerese
             
 

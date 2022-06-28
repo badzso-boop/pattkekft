@@ -144,7 +144,7 @@ function loginUser($conn, $username, $pwd) {
 	$pozicio = getPostition($conn, $username);
 
 	if ($uidExists === false) {
-		header("location: ../login.php?error=wronglogin");
+		header("location: ../admin.php?error=wronglogin");
 		exit();
 	}
 
@@ -152,7 +152,7 @@ function loginUser($conn, $username, $pwd) {
 	$checkPwd = password_verify($pwd, $pwdHashed);
 
 	if ($checkPwd === false) {
-		header("location: ../login.php?error=wronglogin");
+		header("location: ../admin.php?error=wronglogin");
 		exit();
 	}
 	elseif ($checkPwd === true) {
@@ -160,7 +160,7 @@ function loginUser($conn, $username, $pwd) {
 		$_SESSION["userid"] = $uidExists["id"];
 		$_SESSION["useruid"] = $uidExists["felhasznalonev"];
 		$_SESSION["pozicio"] = $pozicio;		
-		header("location: ../index.php?error=none");
+		header("location: ../admin.php?error=none");
 		exit();
 	}
 }
@@ -168,8 +168,6 @@ function loginUser($conn, $username, $pwd) {
 
 /*----------------ADMIN-----------------*/
 #region
-
-
 
 /*--------Felhasznalok------*/
 #region

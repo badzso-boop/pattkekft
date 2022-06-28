@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    color: #0f041d;
+
+
+    background-color: #8f8a8a;
+
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    
+    overflow-x: hidden;
+    z-index: 0;
+    position: relative;
+    
+}
+
+
+.sotet_text {
+    color: #270e00;
+}
+
+.aaaa {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.fontok {
+    font-size: 32px;
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.cuki_filter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    background-image: linear-gradient(135deg, #0B212B 0%, #13364d 100%);
+    opacity: 0.7;
+}
+
+.mt_50 {
+    margin-top: 50px;
+}
+
+.mb_70 {
+    margin-bottom: 70px;
+}
+
+.mb_60 {
+    margin-bottom: 60px;
+}
+
+.mb_30 {
+    margin-bottom: 30px;
+}
+
+.mb_20 {
+    margin-bottom: 20px;
+}
+
+/*--- buttons ---*/
+.btn {
+    display: inline-block;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border-radius: 7px;
+    line-height: 1;
+    letter-spacing: 1.5px;
+    transition: all 0.2s ease-in;
+}
+
+.btn_tema {
+    color: #738895;
+    border-color: #0b212b;
+    background-color: #0b212b;
+}
+
+.btn_tema:hover {
+    border-color: #0b212b;
+    background-color: #0b212b;
+}
+
+.heather {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 30;
+}
+
+.heather .navbar .navbargacica h1 {
+    color: #afadad;
+   font-size: 70%;
+}
+
+
+.heather .navbar .navbargacica i {
+    color: #000000;
+    font-size: 12px;
+    padding-left: 6px;
+}
+
+.heather .nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #ffffff;
+    margin-right: 15px;
+    background-color: transparent;
+    position: relative;
+}
+
+
+
+
+
+.renedezes {
+    min-height: 100vh;
+
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.renedezes .irasok {
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+
+.renedezes .irasok h1 {
+    font-size: 64px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+.renedezes .irasok p {
+    font-size: 18px;
+    margin: 25px 0 45px;
+}
+
+
+.rolunk {
+    padding: 120px 0;
+}
+
+.rolunk .rolunk_kep {
+    margin: 15px 0;
+}
+
+.rolunk .rolunk_kep img {
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 40px 50px -20px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 40px 50px -20px rgba(0, 0, 0, 0.35);
+}
+
+.rolunk .rolunk_ize {
+    margin: 15px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.karrier {
+    padding: 80px 0;
+ 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.karrier .karrier_irasok,
+.karrier .buttonk {
+    margin: 15px 0;
+    position: relative;
+}
+
+
+.karrier .karrier_irasok .ckarrier_cimecske {
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+
+.kepecskek_lapizas {
+    padding: 120px 0;
+}
+
+.kepecskek_lapizas .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.kepecskek_lapizas .swiper-slide img {
+    border-radius: 6px;
+}
+
+.kepecskek_lapizas .swiper .swiper-button-prev,
+.kepecskek_lapizas .swiper .swiper-button-next {
+    outline: none !important;
+}
+
+.kepecskek_lapizas .swiper .swiper-button-prev::after,
+.kepecskek_lapizas .swiper .swiper-button-next::after {
+    color: hsla(0, 0%, 93.3%, .9);
+    font-size: 2rem;
+}
+
+
+
+
+
+.referencica {
+    padding: 120px 0;
+}
+
+.referencica .kepkeret {
+    margin: 10px;
+    overflow: hidden;
+}
+
+.referencica .kepkeret img {
+    width: 100%;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.referencica .kepkeret:hover img {
+    -webkit-transform: rotate(1deg) scale(1.1);
+
+    
+    transform: rotate(1deg) scale(1.1);
+}
+
+
+
+
+
+.elerhetosegek {
+    padding: 100px 0;
+}
+
+.elerhetosegek .elerhetoinfo,
+.elerhetosegek .elerhetosegek2 {
+    margin: 15px;
+}
+
+.elerhetosegek .elerhetoinfo .card {
+    color: #ffffff;
+    background: #11202A;
+}
+
+.elerhetosegek .elerhetosegek2 .capybara {
+    color: #666666;
+    padding: 12px 13px;
+    font-size: 15px;
+    height: auto;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    background: #fafafa;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.elerhetosegek .elerhetosegek2 .capybara:focus {
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    outline: none;
+}
+
+
+.footerize {
+    padding: 60px 0 0 0;
+    background-color: #11202A;
+}
+
+.footerize .logocska_lab {
+    margin-bottom: 77px;
+}
+
+.footerize .logocska_lab a {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+}
+
+.footerize .logocska_lab a>h1 {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: "Playfair Display"
+    font-weight: 600;
+}
+
+.footerize .logocska_lab a>i {
+    color: #ffba00;
+    padding-right: 6px;
+    font-size: 14px;
+}
+
+.footerize .labize_felso h6 {
+    margin-bottom: 0;
+}
+
+.footerize .labize_felso h6>.lablink {
+    font-size: 17px;
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.footerize .footer_addres {
+    margin: 50px 0;
+}
+
+.footerize .sutemeny span {
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    line-height: 43px;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footerize .habcsok {
+    margin-left: 12px;
+}
+
+.footerize .habcsok h6 {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.footerize .cuki_ikonok {
+    margin-bottom: 50px;
+}
+
+.footerize .cuki_ikonok li a {
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    border: 2px solid #f8c27b;
+    color: #f8c27b;
+    border-radius: 50%;
+    font-size: 15px;
+    text-align: center;
+    line-height: 43px;
+    margin-right: 10px;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.footerize .cuki_ikonok li a:hover {
+    background-color: #f8c27b;
+    color: #ffffff;
+}
+
+.footerize .footer_copyright{
+    padding: 1rem 0;
+    border-top: 1px solid rgba(234, 234, 234, 0.15);
+}
+
+
+
+
+

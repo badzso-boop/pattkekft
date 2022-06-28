@@ -39,3 +39,90 @@ adatok - avagy parasztvakítás
 SEO - wp vagy php
 
 Kell admin felület
+
+
+
+/Adatbázis Terv/
+	Felhasznalok:
+		- id INT(11)
+		- teljes_nev VARCHAR(255)
+		- felhasznalonev VARCHAR(255)
+		- email VARCHAR(255)
+		- jelszo VARCHAR(255)
+		- pozicio VARCHAR(255)
+		- reg_datum
+
+	Uzenetek:
+		- id INT(11)
+		- felado VARCHAR(255)
+		- cimzett VARCHAR(255)
+		- szoveg VARCHAR(512) UNICODE
+		- allapot VARCHAR(25) olvasott/olvasatlan
+		- letrehozas_datuma TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+
+	Munkak:
+		- id INT(11)
+		- megnevezes VARCHAR(255)
+		- feladat VARCHAR(512)
+		- fizetes VARCHAR(255)
+		- elerhetoseg VARCHAR(255)
+		- letrehozas_datuma TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+
+	Referenciák:
+		- id INT(11)
+		- megnevezes VARCHAR(255)
+		- leiras VARCHAR(512)
+		- kepek VARCHAR(255)
+		- letrehozas_datuma TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+
+
+/MySQL Parancsok/
+
+__Adatbazis letrehozasa__
+CREATE DATABASE testdb;
+
+__FELHASZNALOK__
+
+CREATE TABLE felhasznalok (
+  id INT(11) AUTO_INCREMENT PRIMARY KEY,
+  teljes_nev VARCHAR(255),
+  felhasznaonev VARCHAR(255) UNIQUE,
+  email VARCHAR(255) UNIQUE,
+  jelszo VARCHAR(255),
+  pozicio VARCHAR(255),
+  reg_datum TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+__UZENETEK__
+
+CREATE TABLE uzenetek (
+  id INT(11) AUTO_INCREMENT PRIMARY KEY,
+  felado VARCHAR(255),
+  elerhetoseg VARCHAR(255),
+  cimzett VARCHAR(255),
+  szoveg VARCHAR(512),
+  allapot VARCHAR(255),
+  munka_id INT(11),
+  letrehozas_datum TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+__MUNKAK__
+CREATE TABLE munkak (
+  id INT(11) AUTO_INCREMENT PRIMARY KEY,
+  megnevezes VARCHAR(255),
+  feladat VARCHAR(512) UNICODE,
+  fizetes INT(11),
+  elerhetoseg VARCHAR(255) UNICODE,
+  letrehozas_datum TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+__REFERENCIAK__
+CREATE TABLE referenciak (
+  id INT(11) AUTO_INCREMENT PRIMARY KEY,
+  megnevezes VARCHAR(255),
+  leiras VARCHAR(512),
+  kepek VARCHAR(255),
+  letrehozas_datum TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
