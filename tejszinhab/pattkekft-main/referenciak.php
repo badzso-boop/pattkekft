@@ -59,45 +59,28 @@
             </div>
         </div>
     </div>
+</section>
+        <?php
+            require_once 'includes/dbh.inc.php';
+            require_once 'includes/functions.inc.php';
 
-    <div class="container">
-        <hr style="margin: 50px; height: 2px; background-color: #0B212B">
-        <h4 class="section_heading_title text_dark text-center" style="padding-top: 25px;">Részletek</h4>
-        <h2 class="section_subtitle text_dark text-center mb_70">Referenciáink részletesebben</h2>
-        <table style="width: 100%" class="table">
-            <tr style="background-color: rgba(11, 33, 43, 0.9); color: white;">
-                <td>
-                    <h4>Megnevezés</h4></td>
-                <td>
-                    <h4>Leírás</h4>
-                </td>
-                <td>
-                    <h4>Létrehozás dátuma</h4>
-                </td>
-                <td></td>
-            </tr>
-            <?php
-                require_once 'includes/dbh.inc.php';
-                require_once 'includes/functions.inc.php';
+            $referenciak = getAllReferencia($conn);
 
-                $referenciak = getAllReferencia($conn);
-
-                if ($referenciak->num_rows > 0) {
-                while($row = $referenciak->fetch_assoc()) {
-                    echo "<tr>
-                            <td class='align-middle' style=' font-size: 20px;'>".$row["megnevezes"]."</td>
-                            <td class='align-middle' style='word-break: break-word; max-width: 50%; font-size: 20px;'>".$row["leiras"]."</td>
-                            <td class='align-middle' style=' font-size: 20px;'>".$row["letrehozas_datum"]."</td>
-                            <td><img style='width: 200px; border-radius: 25px;' src='img/".$row["kepek"]."' alt=''></td>
-                        </tr>";
-                }
-                } else {
-                    echo "0 results";
-                }
-            ?>
+            if ($referenciak->num_rows > 0) {
+            while($row = $referenciak->fetch_assoc()) {
+                echo "<tr>
+                        <td>".$row["megnevezes"]."</td>
+                        <td>".$row["leiras"]."</td>
+                        <td><img style='width: 150px' src='img/".$row["kepek"]."' alt=''></td>
+                        <td>".$row["letrehozas_datum"]."</td>
+                    </tr>";
+            }
+            } else {
+                echo "0 results";
+            }
+        ?>
         </table>
     </div>
-</section>
 
 <?php
     include_once 'parts/footer.php'

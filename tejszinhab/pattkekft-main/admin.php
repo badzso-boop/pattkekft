@@ -14,6 +14,15 @@
 	
 	
 */
+
+
+define("TITLE", "admin");
+	
+	include_once 'parts/header.php';
+	
+	include 'includes/titlebox.php';
+
+
 ?>
 
 

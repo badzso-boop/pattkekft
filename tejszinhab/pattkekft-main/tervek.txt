@@ -1,0 +1,128 @@
+Ez a cég
+http://www.pattkekft.hu/index.php/hu/rolunk/bemutatkozas
+
+https://vattayconstructions.hu/csaladi-haz-epites/?gclid=CjwKCAjw4ayUBhA4EiwATWyBrkuLqQaJSrGGDiHOfiJyDZFE84SnJ9tzz-EB6wnHL0F5sR39xpld_xoCFxAQAvD_BwE
+
+Koncepcio
+https://hungarianproject.hu/
+ - letisztult, egyszerű, modern
+ - szín: barnáés vagy kékes0
+ - burkolatok + referenciák
+ - menu: refernciak, csaladi hazak, elerhetoseg/kapcsolat, karrier, fooldal
+ - ászf + nem jut eszembe
+ - bemutatkozás
+ - cookie
+ - generalkivitelezes... -> hidegburkolat, referencia, melegburkolat
+ - sáv + képek
+ - számok amelyek helyettünk beszélnek
+ - álláslehetőségek -> karrier
+
+karrier
+ - ahol tudnak jelentkezni az uj alkalmazottak
+
+tevékenység/referenciák
+ - ezt ők töltik fel
+
+céginformációk
+ - megadják az adatokat
+
+főoldal
+ - bemutatkozás
+
+elérhetőségek
+ - facebook
+
+szakképzett csapat stb...
+adatok - avagy parasztvakítás
+
+Üzenetküldés - a munkákhoz
+SEO - wp vagy php
+
+Kell admin felület
+
+
+
+/Adatbázis Terv/
+	Felhasznalok:
+		- id INT(11)
+		- teljes_nev VARCHAR(255)
+		- felhasznalonev VARCHAR(255)
+		- email VARCHAR(255)
+		- jelszo VARCHAR(255)
+		- pozicio VARCHAR(255)
+		- reg_datum
+
+	Uzenetek:
+		- id INT(11)
+		- felado VARCHAR(255)
+		- cimzett VARCHAR(255)
+		- szoveg VARCHAR(512) UNICODE
+		- allapot VARCHAR(25) olvasott/olvasatlan
+		- letrehozas_datuma TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+
+	Munkak:
+		- id INT(11)
+		- megnevezes VARCHAR(255)
+		- feladat VARCHAR(512)
+		- fizetes VARCHAR(255)
+		- elerhetoseg VARCHAR(255)
+		- letrehozas_datuma TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+
+	Referenciák:
+		- id INT(11)
+		- megnevezes VARCHAR(255)
+		- leiras VARCHAR(512)
+		- kepek VARCHAR(255)
+		- letrehozas_datuma TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+
+
+/MySQL Parancsok/
+
+__Adatbazis letrehozasa__
+CREATE DATABASE testdb;
+
+__FELHASZNALOK__
+
+CREATE TABLE felhasznalok (
+  id INT(11) AUTO_INCREMENT PRIMARY KEY,
+  teljes_nev VARCHAR(255),
+  felhasznaonev VARCHAR(255) UNIQUE,
+  email VARCHAR(255) UNIQUE,
+  jelszo VARCHAR(255),
+  pozicio VARCHAR(255),
+  reg_datum TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+__UZENETEK__
+
+CREATE TABLE uzenetek (
+  id INT(11) AUTO_INCREMENT PRIMARY KEY,
+  felado VARCHAR(255),
+  elerhetoseg VARCHAR(255),
+  cimzett VARCHAR(255),
+  szoveg VARCHAR(512),
+  allapot VARCHAR(255),
+  munka_id INT(11),
+  letrehozas_datum TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+__MUNKAK__
+CREATE TABLE munkak (
+  id INT(11) AUTO_INCREMENT PRIMARY KEY,
+  megnevezes VARCHAR(255),
+  feladat VARCHAR(512) UNICODE,
+  fizetes INT(11),
+  elerhetoseg VARCHAR(255) UNICODE,
+  letrehozas_datum TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+__REFERENCIAK__
+CREATE TABLE referenciak (
+  id INT(11) AUTO_INCREMENT PRIMARY KEY,
+  megnevezes VARCHAR(255),
+  leiras VARCHAR(512),
+  kepek VARCHAR(255),
+  letrehozas_datum TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);

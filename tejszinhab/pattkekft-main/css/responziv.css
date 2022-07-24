@@ -1,0 +1,85 @@
+@media only screen and (min-width: 992px) {
+    .rolunk .rolunk_ize {
+        padding-left: 60px;
+    }
+
+    .heather .menu .nav-item {
+        position: relative;
+        padding: 35px 0;
+        margin-left: 25px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .heather {
+        padding: 10px 20px;
+    }
+
+    .heather ul.menu {
+        padding: 10px 20px;
+        background-color: #f6f6f9;
+    }
+
+    .heather .menu .nav-item .nav-link {
+        color: #311d3d;
+    }
+
+  
+}
+
+@media only screen and (max-width: 600px) {
+    .heather .navbargacica>.site_logo {
+        width: 140px;
+        height: 42px;
+    }
+
+    .fontok {
+        font-size: 24px;
+    }
+
+  
+
+    .renedezes .irasok h1 {
+        font-size: 36px;
+        letter-spacing: 0;
+    }
+
+    .renedezes .irasok p {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .karrier .karrier_irasok h2.ckarrier_cimecske {
+        font-size: 24px;
+    }
+
+  
+
+    .elerhetosegek .elerhetoinfo {
+        margin-bottom: 30px;
+    }
+
+    .elerhetosegek .elerhetoinfo ul.list-group {
+        display: none;
+    }
+
+    .footerize .labize_felso h6>.lablink {
+        padding: 8px 0;
+    }
+
+    .footerize .footer_address .sutemeny_box {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .footerize .footer_address .sutemeny {
+        margin-bottom: 8px;
+    }
+
+    .footerize .footer_address .sutemeny_box span {
+        margin: 0 auto;
+    }
+}

@@ -23,10 +23,10 @@
                     <h6><a href='karrier.php' class="lablink">karrier</a></h6>
                 </div>
                 <div class="col-lg-2 col-md-2">
-                    <h6><a href='referenciak.php' class="lablink">referencia</a></h6>
+                    <h6><a href='referencia.php' class="lablink">referencia</a></h6>
                 </div>
                 <div class="col-lg-2 col-md-2">
-                    <h6><a href='elerhetosegek.php' class="lablink">elérhetőség</a></h6>
+                    <h6><a href='elerhetoseg.php' class="lablink">elérhetőség</a></h6>
                 </div>
             </div>
         </div>

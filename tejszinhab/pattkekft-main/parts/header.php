@@ -53,7 +53,7 @@
 				<i></i>
 				 <i></i>
                     <i></i>
-                    <h1> <img src="img/logo.png" alt="logo" style="width: 8rem;" > </h1>
+                    <h1> itt a logo  </h1>
 					
 					
                 </a>
