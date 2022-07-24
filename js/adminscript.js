@@ -104,7 +104,7 @@ function userSzerkesztes(id, name, username, email, pozicio)
 
     var tid = document.getElementsByName("id")[0].value = id;
     var tname = document.getElementsByName("name")[0].value = name;
-    var tusername = document.getElementsByName("uid")[0].value = username;
+    var tusername = document.getElementsByName("euid")[0].value = username;
     var temail = document.getElementsByName("email")[0].value = email;
     var tpozicio = document.getElementsByName("position")[0].value = pozicio;
 }
@@ -139,7 +139,7 @@ function workEdit(id, megnevezes, feladat, fizetes, elerhetoseg) {
         wszlatszik = true;
     }
 
-    var tid = document.getElementsByName("wid")[0].value = id;
+    var tid = document.getElementsByName("swid")[0].value = id;
     var tname = document.getElementsByName("wnev")[0].value = megnevezes;
     var tusername = document.getElementsByName("wfeladat")[0].value = feladat;
     var temail = document.getElementsByName("wfizetes")[0].value = fizetes;

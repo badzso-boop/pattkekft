@@ -47,7 +47,7 @@
     if (isset($_POST["submit"])) {
         $id = $_POST["id"];
         $name = $_POST["name"];
-        $username = $_POST["uid"];
+        $username = $_POST["euid"];
         $email = $_POST["email"];
         $position = $_POST["position"];
 
@@ -74,7 +74,7 @@
 
     //adott munka szerkesztese
     if (isset($_POST["wsubmit"])) {
-        $id = $_POST["wid"];
+        $id = $_POST["swid"];
         $nev = $_POST["wnev"];
         $feladat = $_POST["wfeladat"];
         $fizetes = $_POST["wfizetes"];

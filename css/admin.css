@@ -1,0 +1,12 @@
+body {
+    background-color: rgba(11, 33, 43, 0.9);
+}
+
+.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+    margin-left: 25rem;
+    margin-right: 25rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}

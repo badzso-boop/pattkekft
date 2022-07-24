@@ -266,6 +266,7 @@ function getAllWorks($conn) {
 }
 
 function editSpecificWork($conn, $id, $nev, $feladat, $fizetes, $elerhetoseg) {
+	//header("location: ../admin.php?UPDATE munkak SET megnevezes=".$nev.", feladat= ".$feladat.", fizetes= ".$fizetes.", elerhetoseg= ".$elerhetoseg." WHERE id=".$id.";");
 	$sql = "UPDATE munkak SET megnevezes= ?, feladat= ?, fizetes= ?, elerhetoseg= ? WHERE id= ?;";
 
 	$stmt = mysqli_stmt_init($conn);
