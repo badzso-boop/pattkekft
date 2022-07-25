@@ -10,3 +10,15 @@ body {
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
+
+.fooldal {
+    display: none;
+}
+
+#menu {
+    list-style: none;
+}
+
+.listitem {
+    margin: 15px;
+}
