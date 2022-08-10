@@ -18,7 +18,7 @@
         }
         
         // Bejelentkeztetjük a felhasználót a weboldalra
-        loginUser($conn, $username, $pwd);    
+        loginUser($conn, $username, $pwd);
     }
 
     if(isset($_SESSION["pozicio"])) {

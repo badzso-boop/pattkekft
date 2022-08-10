@@ -22,47 +22,37 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
-<div class="adminlogin">
-    <section class="loginstyle">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-lg-2">
-                    <h2>Belépés</h2>
-                </div>
-                <div class="col-lg-1">
-                </div>
-                <div class="col-lg-7">
-                    <div class="contact_form">
-                        <form action="includes/admin.inc.php" method="post">
-                            <div class="row">
-                                <div class="col-lg-5 ">
-                                    <div class="mb-4">
-                                        <input type="text" name="uid" placeholder="Felhasználónév...">
-                                    </div>
-                                </div>
-                                <div class="mb-4">
-                                    <input type="password" name="pwd" placeholder="Jelszó...">
-                                </div>
-                            </div>
-                                <button type="submit" name="ssubmit" class="btn btn_tema mt-2 shadow-none">Belépés</button>
-                            </div>
-	                    </form>
-                    </div>
-                </div>
+<div class="adminlogin">      
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+            </div>
+            <div class="col-sm text-center">
+                <h3 class="text-uppercase font-weight-bold">Belépés</h3>
+
+                <form action="includes/admin.inc.php" method="post">
+                    <input type="text" id="bevitel" class="form-control m-auto" style="width: 75%" name="uid" placeholder="Felhasználónév...">
+                    <input type="password" id="bevitel" class="form-control m-auto" style="width: 75%" name="pwd" placeholder="Jelszó...">
+                    <br>
+                    <button type="submit" name="ssubmit" class="btn btn_tema mt-2 shadow-none">Belépés</button>
+                </form>
+            </div>
+            <div class="col-sm">
             </div>
         </div>
-        <?php
-            // Hiba üzenetek
-            if (isset($_GET["error"])) {
-                if ($_GET["error"] == "emptyinput") {
-                echo "<p>Kérem töltse ki az összes mezőt!</p>";
-                }
-                else if ($_GET["error"] == "wronglogin") {
-                echo "<p>Hibás adatok!</p>";
-                }
+    </div>
+    
+    <?php
+        // Hiba üzenetek
+        if (isset($_GET["error"])) {
+            if ($_GET["error"] == "emptyinput") {
+            echo "<p>Kérem töltse ki az összes mezőt!</p>";
             }
-        ?>
-    </section>
+            else if ($_GET["error"] == "wronglogin") {
+            echo "<p>Hibás adatok!</p>";
+            }
+        }
+    ?>
 </div>
 	
 <div class="fooldal" style="margin-top: 20px!important;">

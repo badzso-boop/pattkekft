@@ -33,9 +33,9 @@ body {
 }
 
 .fontok {
-    font-size: 32px;
+    font-size: 35px;
     font-family: 'Playfair Display', serif;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: capitalize;
 }
 
@@ -70,7 +70,7 @@ body {
     margin-bottom: 20px;
 }
 
-/*--- buttons ---*/
+
 .btn {
     display: inline-block;
     font-family: inherit;
@@ -131,7 +131,7 @@ body {
 
 .renedezes {
     min-height: 100vh;
-
+    background-image: url(../img/65.jpg);
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -160,21 +160,30 @@ body {
 
 
 .rolunk {
-    padding: 120px 0;
+    padding: 135px 0;
 }
 
 .rolunk .rolunk_kep {
-    margin: 15px 0;
+    margin: 6px 0;
 }
 
 .rolunk .rolunk_kep img {
-    border-radius: 6px;
+    border-radius: 8px;
     -webkit-box-shadow: 0px 40px 50px -20px rgba(0, 0, 0, 0.35);
     box-shadow: 0px 40px 50px -20px rgba(0, 0, 0, 0.35);
+
+    margin-left: auto;
+    
 }
 
 .rolunk .rolunk_ize {
-    margin: 15px 0;
+    margin: 1px 0;
+}
+
+.rolunk_kep img{
+
+    max-width: 200%;  
+height: 100%;  
 }
 
 
@@ -603,5 +612,85 @@ body {
 
 
 
+.velemenyekk {
+    padding: 100px 0;
+}
+
+.velemenyekk .dobozocskacska {
+    margin: 10px;
+}
+
+.velemenyekk .dobozocskacska h4 {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.velemenyekk .dobozocskacska .ertekeless {
+    margin: 8px 0 15px;
+    color: #ffce47;
+    font-size: 14px;
+}
+
+.velemenyekk .dobozocskacska .velemenyes_kep img {
+    width: 78px;
+    height: 78px;
+}
+
+.velemenyekk .dobozocskacska .nev_embi h6 {
+    font-size: 16px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.velemenyekk .dobozocskacska .nev_embi span {
+    font-size: 14px;
+}
 
 
+
+
+
+
+
+
+.cicaa {
+   
+    display: none;
+
+    background-color:#0B212B;
+    min-width: 200px;
+ 
+    
+
+    padding-right: 10px;
+
+    border-radius: 4px;
+ 
+  }
+
+
+
+  
+
+
+  
+.cicaa a:hover {
+    background-color: #ddd;
+  }
+
+
+  .nav-item:hover .cicaa {
+    display:unset;
+
+    position:absolute
+
+   
+  }
+
+ 
+
+  
+  
+  
+  

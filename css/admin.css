@@ -11,6 +11,14 @@ body {
     margin-bottom: 5rem;
 }
 
+#bevitel {
+    margin-top: 15px !important;
+}
+
+.adminlogin {
+    margin-top: 15px;
+}
+
 .fooldal {
     display: none;
 }

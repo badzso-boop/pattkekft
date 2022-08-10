@@ -12,7 +12,7 @@
         <div class="row g-0">
             <div class="col-lg-6 d-flex align-items-center">
                 <div class="rolunk_kep">
-                    <img src="img/4.jpg" class="img-fluid">
+                    <img src="img/1.jpeg" class="img-fluid">
                 </div>
             </div>
 

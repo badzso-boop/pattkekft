@@ -156,7 +156,9 @@ function loginUser($conn, $username, $pwd) {
 		exit();
 	}
 	elseif ($checkPwd === true) {
-		session_start();
+		if( empty(session_id()) && !headers_sent()){
+			session_start();
+		}
 		$_SESSION["userid"] = $uidExists["id"];
 		$_SESSION["useruid"] = $uidExists["felhasznalonev"];
 		$_SESSION["pozicio"] = $pozicio;		
