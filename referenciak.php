@@ -13,55 +13,82 @@
         <h2 class="section_subtitle text_dark text-center mb_70">nezd meg a kepeket</h2>
         <div class="row g-0">
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="dobozka">
-                    <img src="img/4.jpg" class="img-fluid">
+                <div class="card dobozka" style="width: 18rem;">
+                    <img class="card-img-top" src="img/4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="dobozka">
-                    <img src="img/4.jpg" class="img-fluid">
+                <div class="card dobozka" style="width: 18rem;">
+                    <img class="card-img-top" src="img/4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="dobozka">
-                    <img src="img/4.jpg" class="img-fluid">
+                <div class="card dobozka" style="width: 18rem;">
+                    <img class="card-img-top" src="img/4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="dobozka">
-                    <img src="img/4.jpg" class="img-fluid">
+                <div class="card dobozka" style="width: 18rem;">
+                    <img class="card-img-top" src="img/4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="dobozka">
-                    <img src="img/4.jpg" class="img-fluid">
+                <div class="card dobozka" style="width: 18rem;">
+                    <img class="card-img-top" src="img/4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="dobozka">
-                    <img src="img/4.jpg" class="img-fluid">
+                <div class="card dobozka" style="width: 18rem;">
+                    <img class="card-img-top" src="img/4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="dobozka">
-                    <img src="img/4.jpg" class="img-fluid">
+                <div class="card dobozka" style="width: 18rem;">
+                    <img class="card-img-top" src="img/4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="dobozka">
-                    <img src="img/4.jpg" class="img-fluid">
+                <div class="card dobozka" style="width: 18rem;">
+                    <img class="card-img-top" src="img/4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="dobozka">
-                    <img src="img/4.jpg" class="img-fluid">
+                <div class="card dobozka" style="width: 18rem;">
+                    <img class="card-img-top" src="img/4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="container">
-        <hr style="margin: 50px; height: 2px; background-color: #0B212B">
+        <hr style="margin-top: 10rem;  height: 2px; background-color: #0B212B">
         <h4 class="section_heading_title text_dark text-center" style="padding-top: 25px;">Részletek</h4>
         <h2 class="section_subtitle text_dark text-center mb_70">Referenciáink részletesebben</h2>
         <table style="width: 100%" class="table">
@@ -74,7 +101,8 @@
                 <td>
                     <h4>Létrehozás dátuma</h4>
                 </td>
-                <td></td>
+                <td>
+                </td>
             </tr>
             <?php
                 require_once 'includes/dbh.inc.php';
