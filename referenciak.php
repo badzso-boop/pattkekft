@@ -13,7 +13,7 @@
         <h2 class="section_subtitle text_dark text-center mb_70">nezd meg a kepeket</h2>
         <div class="row g-0">
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="card dobozka" style="width: 18rem;">
+                <div class="card dobozka shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
                     <img class="card-img-top" src="img/4.jpg" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="card dobozka" style="width: 18rem;">
+                <div class="card dobozka shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
                     <img class="card-img-top" src="img/4.jpg" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="card dobozka" style="width: 18rem;">
+                <div class="card dobozka shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
                     <img class="card-img-top" src="img/4.jpg" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="card dobozka" style="width: 18rem;">
+                <div class="card dobozka shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
                     <img class="card-img-top" src="img/4.jpg" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="card dobozka" style="width: 18rem;">
+                <div class="card dobozka shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
                     <img class="card-img-top" src="img/4.jpg" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="card dobozka" style="width: 18rem;">
+                <div class="card dobozka shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
                     <img class="card-img-top" src="img/4.jpg" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -61,7 +61,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="card dobozka" style="width: 18rem;">
+                <div class="card dobozka shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
                     <img class="card-img-top" src="img/4.jpg" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="card dobozka" style="width: 18rem;">
+                <div class="card dobozka shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
                     <img class="card-img-top" src="img/4.jpg" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -77,7 +77,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="card dobozka" style="width: 18rem;">
+                <div class="card dobozka shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
                     <img class="card-img-top" src="img/4.jpg" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

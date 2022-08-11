@@ -43,7 +43,7 @@
 
             if ($works->num_rows > 0) {
             while($row = $works->fetch_assoc()) {
-                echo "<div class='card'>
+                echo "<div class='card m-3 shadow p-3 mb-5 bg-white rounded'>
                 <div class='card-header' id='heading".$row['id']."'>
                     <h5 class='mb-0'>
                         <button class='btn btn-light' data-toggle='collapse' data-target='#collapse".$row['id']."' aria-expanded='false' aria-controls='collapse".$row['id']."'>
