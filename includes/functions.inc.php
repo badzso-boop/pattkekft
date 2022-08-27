@@ -171,6 +171,7 @@ function loginUser($conn, $username, $pwd) {
 /*----------------ADMIN-----------------*/
 #region
 
+
 /*--------Felhasznalok------*/
 #region
 function getAllUser($conn) {
@@ -452,5 +453,29 @@ function deleteSpecificReferencia($conn, $id) {
 }
 
 #endregion
+
+#endregion
+
+/*--------------Referenciák-----------*/
+#region
+
+function emptySearch($megnevezes) {
+	$result;
+	if (empty($megnevezes)) {
+		$result = true;
+	}
+	else {
+		$result = false;
+	}
+
+	return $result;
+}
+
+function search($megnevezes, $conn) {
+	$sql = "SELECT * FROM referenciak WHERE megnevezes LIKE '%".$megnevezes."%';";
+	$result = $conn->query($sql);
+
+	return $result;
+}
 
 #endregion

@@ -91,6 +91,48 @@
         <hr style="margin-top: 10rem;  height: 2px; background-color: #0B212B">
         <h4 class="section_heading_title text_dark text-center" style="padding-top: 25px;">Részletek</h4>
         <h2 class="section_subtitle text_dark text-center mb_70">Referenciáink részletesebben</h2>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <form class="text-center" action="includes/referencia.inc.php" method="post">
+                        <div class="input-group mx-auto" style="width: 75%;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Keresés</span>
+                            </div>
+                            <input name="kereses" placeholder="Megnevezés" type="text" class="form-control" aria-label="kereses" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <button type="submit" name="submit" class="btn btn-dark m-3">Keresés</button>
+                    </form>
+                </div>
+                <div class="col-sm">
+                    <?php 
+                    require_once 'includes/dbh.inc.php';
+                    require_once 'includes/functions.inc.php';
+
+                    if(isset($_GET['megnevezes'])) {
+                        $megnevezes = $_GET['megnevezes'];
+                        $eredmeny = search($megnevezes, $conn);
+                        
+                        if ($eredmeny->num_rows > 0) {
+                            while($oszlop = $eredmeny->fetch_assoc()) {
+                                echo '<div class="result">
+                                        <h4>Megnevezés:</h4> <ul><li>'.$oszlop['megnevezes'].'</li></ul>
+                                        <h4>Leírás:</h4> <ul><li>'.$oszlop['leiras'].'</li></ul>
+                                        <h4>Kép:</h4> <ul><li style="list-style: none;"><img style="width: 200px; border-radius: 25px;" src="img/'.$oszlop['kepek'].'" alt=""></li></ul>
+                                        </div>';
+                            }
+                        }
+                    }
+                    ?>
+
+                    
+                </div>
+            </div>
+        </div>
+        
+
+
         <table style="width: 100%" class="table">
             <tr style="background-color: rgba(11, 33, 43, 0.9); color: white;">
                 <td>
